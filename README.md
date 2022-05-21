@@ -32,5 +32,7 @@ Search Engines:
 
 Question Sites: 
 - brainly.ph 
-- quora.com 
+- quora.com
 - scholar google
+- 
+![Screenshot 2022-05-21 155137](https://user-images.githubusercontent.com/104715127/169641885-3b943b90-a85f-4098-af9e-9f71bfbe37d7.png)
