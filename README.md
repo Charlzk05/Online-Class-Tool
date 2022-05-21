@@ -1,5 +1,5 @@
 # Online Class Tool
-Using multiple search engine and education website to search quicker
+Using CefSharp and Selenium multiple search engine and education website to search quicker
 
 # Packages
 - CefSharp
