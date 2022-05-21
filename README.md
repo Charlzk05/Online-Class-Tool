@@ -1,6 +1,9 @@
 # Online Class Tool
 A simple tool that uses CefSharp and Selenium multiple search engine and education website to search quicker
 
+# Download
+- https://github.com/Charlzk05/OnlineClassTool/releases/tag/v1.0.0
+
 # Packages
 - Cef.Redist.x64
 - Cef.Redist.x86
