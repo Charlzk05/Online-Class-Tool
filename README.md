@@ -23,5 +23,14 @@ Using CefSharp and Selenium multiple search engine and education website to sear
     }
 }
 ```
-Search Engines - google, bing, yahoo, yandex, ask
-Question Sites - brainly.ph, quora.com, scholar google
+Search Engines: 
+- google
+- bing
+- yahoo 
+- yandex
+- ask
+
+Question Sites: 
+- brainly.ph 
+- quora.com 
+- scholar google
