@@ -1,0 +1,80 @@
+﻿<Window x:Class="OnlineClassTool.TextEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnlineClassTool"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        mc:Ignorable="d"
+        Title="Text Editor Window" Height="600" Width="1000" WindowStartupLocation="CenterScreen">
+    <Border Margin="5,0,5,5">
+        <DockPanel LastChildFill="False">
+            <Menu DockPanel.Dock="Top" Background="{x:Null}">
+                <MenuItem Header="Edit">
+                    <MenuItem Header="Font Size">
+                        <MenuItem x:Name="MFS10" Click="MFS10_Click" Header="10px" FontSize="10px"/>
+                        <MenuItem x:Name="MFS12" Click="MFS12_Click" Header="12px" FontSize="12px" InputGestureText="Default"/>
+                        <MenuItem x:Name="MFS14" Click="MFS14_Click" Header="14px" FontSize="14px"/>
+                        <MenuItem x:Name="MFS16" Click="MFS16_Click" Header="16px" FontSize="16px"/>
+                        <MenuItem x:Name="MFS18" Click="MFS18_Click" Header="18px" FontSize="18px"/>
+                        <MenuItem x:Name="MFS20" Click="MFS20_Click" Header="20px" FontSize="20px"/>
+                        <Separator/>
+                        <MenuItem x:Name="MFS22" Click="MFS22_Click" Header="22px" FontSize="22px"/>
+                        <MenuItem x:Name="MFS24" Click="MFS24_Click" Header="24px" FontSize="24px"/>
+                        <MenuItem x:Name="MFS26" Click="MFS26_Click" Header="26px" FontSize="26px"/>
+                        <MenuItem x:Name="MFS28" Click="MFS28_Click" Header="28px" FontSize="28px"/>
+                        <MenuItem x:Name="MFS30" Click="MFS30_Click" Header="30px" FontSize="30px"/>
+                    </MenuItem>
+                    <MenuItem Header="Font Family">
+                        <MenuItem x:Name="FFConsolas" Click="FFConsolas_Click" Header="Consolas" FontFamily="Consolas" InputGestureText="Default"/>
+                        <MenuItem x:Name="FFSegeoUI" Click="FFSegeoUI_Click" Header="Segeo UI" FontFamily="Segeo UI"/>
+                        <MenuItem x:Name="FFArial" Click="FFArial_Click" Header="Arial" FontFamily="Arial"/>
+                        <MenuItem x:Name="FFBahnschrift" Click="FFBahnschrift_Click" Header="Bahnschrift" FontFamily="Bahnschrift"/>
+                        <MenuItem x:Name="FFYuGothicUI" Click="FFYuGothicUI_Click" Header="Yu Gothic UI" FontFamily="Yu Gothic UI"/>
+                        <MenuItem x:Name="FFVerdana" Click="FFVerdana_Click" Header="Verdana" FontFamily="Verdana"/>
+                    </MenuItem>
+                    <MenuItem Header="Font Weight">
+                        <MenuItem x:Name="FWUltraLight" Click="FWUltraLight_Click" Header="Ultra Light" FontWeight="UltraLight"/>
+                        <MenuItem x:Name="FWLight" Click="FWLight_Click" Header="Light" FontWeight="Light"/>
+                        <Separator/>
+                        <MenuItem x:Name="FWNormal" Click="FWNormal_Click" Header="Normal" FontWeight="Normal" InputGestureText="Default"/>
+                        <MenuItem x:Name="FWMedium" Click="FWMedium_Click" Header="Medium" FontWeight="Medium"/>
+                        <Separator/>
+                        <MenuItem x:Name="FWSemiBold" Click="FWSemiBold_Click" Header="Semi Bold" FontWeight="SemiBold"/>
+                        <MenuItem x:Name="FWBold" Click="FWBold_Click" Header="Bold" FontWeight="Bold"/>
+                        <Separator/>
+                        <MenuItem x:Name="FWUltraBold" Click="FWUltraBold_Click" Header="Ultra Bold" FontWeight="UltraBold"/>
+                        <MenuItem x:Name="FWBlack" Click="FWBlack_Click" Header="Black" FontWeight="Black"/>
+                        <Separator/>
+                        <MenuItem x:Name="FWHeavy" Click="FWHeavy_Click" Header="Heavy" FontWeight="Heavy"/>
+                        <MenuItem x:Name="FWUltraBlack" Click="FWUltraBlack_Click" Header="Ultra Black" FontWeight="UltraBlack"/>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+            <Grid Height="24" DockPanel.Dock="Top" Margin="0,5,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnSaveFile" Click="btnSaveFile_Click" Grid.Column="0" Background="{x:Null}" BorderThickness="0">
+                    <fa:ImageAwesome Icon="Save" Margin="2,2,2,2"/>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="3"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="btnOpenFile" Click="btnOpenFile_Click" Grid.Column="1" Margin="3,0,0,0" Background="{x:Null}" BorderThickness="0">
+                    <fa:ImageAwesome Icon="PencilSquare" Margin="2,2,2,2"/>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="3"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
+            <RichTextBox x:Name="rTextBox" FontFamily="Consolas" Margin="0,5,0,0" Padding="0,3,0,3" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" />
+        </DockPanel>
+    </Border>
+</Window>
