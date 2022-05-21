@@ -1,5 +1,5 @@
 # Online Class Tool
-Using CefSharp and Selenium multiple search engine and education website to search quicker
+A simple tool that uses CefSharp and Selenium multiple search engine and education website to search quicker
 
 # Packages
 - Cef.Redist.x64
