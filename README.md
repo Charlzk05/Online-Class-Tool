@@ -2,10 +2,12 @@
 Using CefSharp and Selenium multiple search engine and education website to search quicker
 
 # Packages
-- CefSharp
-- FontAwesome
+- Cef.Redist.x64
+- Cef.Redist.x86
+- CefSharpCefSharp.Wpf
+- FontAwesome.WPF
 - Newstonsoft.Json
-- Selenium
+- Selenium.WebDriver
 
 # Default Settings
 ```json
